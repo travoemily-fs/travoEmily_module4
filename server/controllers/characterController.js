@@ -17,7 +17,7 @@ exports.getAllCharacters = async (req, res) => {
       };
     }
     // new mongoose query filter
-    let query = Characters.find(filter).populate("name");
+    let query = Characters.find(filter);
 
     // SELECT logic for including/excluding fields
     if (req.query.select) {
@@ -116,13 +116,6 @@ exports.createCharacter = async (req, res) => {
       return res.status(400).json({
         success: false,
         message: messages.missingFields,
-      });
-    }
-
-    if (!mongoose.Types.ObjectId.isValid(house)) {
-      return res.status(400).json({
-        success: false,
-        message: messages.invalidHouseId,
       });
     }
 

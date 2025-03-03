@@ -5,7 +5,7 @@ const {
   createHouse,
   updateHouse,
   deleteHouse,
-} = require("../controller/houseController");
+} = require("../controllers/houseController");
 
 // GET method
 router.get("/", getAllHouses);

@@ -5,7 +5,7 @@ const {
   createCharacter,
   updateCharacter,
   deleteCharacter,
-} = require("../controller/characterController");
+} = require("../controllers/characterController");
 
 // GET method
 router.get("/", getAllCharacters);
@@ -20,9 +20,7 @@ router.get("/:id", getCharacterByID);
 router.put("/:id", updateCharacter);
 router.patch("/:id", updateCharacter);
 
-
 // DELETE by ID method
 router.delete("/:id", deleteCharacter);
 
 module.exports = router;
-

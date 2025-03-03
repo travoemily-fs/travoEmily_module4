@@ -1,8 +1,8 @@
 {
-  "name": "travoemily_2.6nodemongodb",
+  "name": "travoemily_module4",
   "version": "1.0.0",
   "description": "![Repo Banner](https://www.dropbox.com/scl/fi/2tg9yj1my4tu4e6r3ryhq/repobanner.png?rlkey=u81eqfslsjercs9je5r13s52u&raw=1)",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -22,9 +22,10 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.10.0",
+    "mongoose": "^8.11.0",
     "morgan": "^1.10.0"
   }
 }
